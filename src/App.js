@@ -39,13 +39,14 @@ const App = () =>{
   const[nums, setNums] = useState(0);
 
   useEffect(()=>{
-    alert("I am Clicked");
+    // alert("I am Clicked");
+    document.title = (" I am Clicked " + num + "times")
   }, [num]);
 
   const Incr = () =>{
-    setNum(num+1);
-   
+        setNum(num+1);  
   };
+
   const Incrs =() => {
     setNums(nums+1);
   };
